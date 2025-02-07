@@ -1,5 +1,12 @@
 day 1 : 06/02/2025
 
 learn:html tags
-implement
-challenges
+implement :
+challenges :
+
+
+day 2 : 07/02/2025
+
+learn : css styles
+implement :Responsive design for a clean and professional look
+challenges :  Designing a Unique & Professional Look

@@ -1,11 +1,110 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>on the way</h1>
-</body>
-</html>
+        <title>Document</title>
+        <title>Profile Page</title>
+        <style>
+                   * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+    
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f5e6e1;
+                color: #4a4a4a;
+                text-align: center;
+                padding: 50px;
+            }
+    
+            header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                padding: 20px 60px;
+                background-color: #f8f8f8;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                z-index: 1000;
+            }
+    
+            .logo {
+                font-size: 24px;
+                font-weight: bold;
+                font-family: 'Brush Script MT', cursive;
+            }
+    
+            nav ul {
+                list-style: none;
+                display: flex;
+                gap: 20px;
+            }
+    
+            nav ul li {
+                display: inline;
+            }
+    
+            nav ul li a {
+                text-decoration: none;
+                color: black;
+                font-size: 18px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                transition: color 0.3s;
+            }
+    
+            nav ul li a:hover {
+                color: #f30d0d;
+            }
+    
+            .container {
+                max-width: 600px;
+                margin: 120px auto 0;
+                background: #f5e6e1;
+                padding: 30px;
+                border-radius: 10px;
+            }
+    
+            .profile-image {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+    
+            h1 {
+                font-size: 24px;
+                margin-top: 10px;
+            }
+    
+            p {
+                font-size: 16px;
+                line-height: 1.6;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <header>
+            <div class="logo">Nooraaah</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="skills.html">My skills</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container">
+            <img src="./images/noora.JPG" alt="Profile Image" class="profile-image">
+            <h1>Hi, I am Nooraah, nice to meet you!</h1>
+            <p>I am a designer and art director currently living in Stuttgart, Germany. Half German, half Italian, I like to bring the best of both worlds into my design which is known for its sophisticated simplicity and thoughtful details.</p>
+            <p>In 2012 I founded my own creative studio to specialize in branding, web, and print design and to work with ambitious business owners from all over the globe.</p>
+        </div>
+    </body>
+    </html>
+    </html>

@@ -1,11 +1,167 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>on the way</h1>
-</body>
-</html>
+        <title>Document</title>
+        <title>Contact Form</title>
+        <style>
+    
+      
+    
+            header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                padding: 20px 60px;
+                background-color: #f8f8f8;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                z-index: 1000;
+            }
+    
+            .logo {
+                font-size: 24px;
+                font-weight: bold;
+                font-family: 'Brush Script MT', cursive;
+            }
+    
+            nav ul {
+                list-style: none;
+                display: flex;
+                gap: 20px;
+            }
+    
+            nav ul li {
+                display: inline;
+            }
+    
+            nav ul li a {
+                text-decoration: none;
+                color: black;
+                font-size: 18px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                transition: color 0.3s;
+            }
+    
+            nav ul li a:hover {
+                color: #f30d0d;
+            }
+    
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: Arial, sans-serif;
+            }
+    
+            body {
+                background: linear-gradient(to bottom, #ffffff, #d7e8d4);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+    
+            .container {
+                display: flex;
+                width: 70%;
+                max-width: 900px;
+                align-items: flex-start;
+                justify-content: space-between;
+            }
+    
+            .text-section {
+                flex: 1;
+            }
+    
+            .text-section h1 {
+                font-size: 32px;
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+    
+            .text-section .line {
+                width: 70%;
+                height: 8px;
+                background: #d3d3d3;
+                margin-bottom: 10px;
+                border-radius: 4px;
+            }
+    
+            .form-section {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
+    
+        
+    
+            input, textarea {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #888;
+                border-radius: 5px;
+                font-size: 16px;
+            }
+    
+            textarea {
+                height: 100px;
+            }
+    
+            button {
+                background: black;
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 16px;
+                align-self: center;
+            }
+    
+            button:hover {
+                background: #333;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <header>
+            <div class="logo">Nooraaah</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="skills.html">My skills</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container">
+            <div class="text-section">
+                <h1>Let's chat.</h1>
+                <div class="line"></div>
+                <div class="line" style="width: 50%;"></div>
+            </div>
+            <div class="form-section">
+                <div class="line">
+                    Enter your name
+                </div>
+                <input type="text">
+                <div class="line">
+                    Enter your email
+                </div>
+                <input type="email">
+                <div class="line">
+                    Enter your messsage
+                </div>
+                <textarea></textarea>
+                <button>Send message</button>
+            </div>
+        </div>
+    </body>
+    </html>
+    </html>

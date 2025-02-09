@@ -3,29 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Skills & Passion</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        /* Header Section */
         header {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            width: 100%;
             padding: 20px 60px;
             background-color: #f8f8f8;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
         }
 
-        .logo a {
+        .logo {
             font-size: 24px;
             font-weight: bold;
             font-family: 'Brush Script MT', cursive;
-            text-decoration: none;
-            color: black;
         }
 
         nav ul {
@@ -34,231 +31,183 @@
             gap: 20px;
         }
 
+        nav ul li {
+            display: inline;
+        }
+
         nav ul li a {
             text-decoration: none;
             color: black;
             font-size: 18px;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
-            transition: color 0.3s ease;
+            transition: color 0.3s;
         }
 
         nav ul li a:hover {
             color: #f30d0d;
         }
 
-        /* Hero Section */
-        .hero {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 80px 100px;
-            background-color: #c19999;
+        * {
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        
         }
 
-        .hero-text {
-            max-width: 50%;
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 70px;
+            margin: 0;
+        }
+        
+        .container {
+            width: 100%;
+            padding: 10px;
+            background: #f5e6e1;
+            margin-top: 0;
         }
 
-        .hero-text p {
-            font-size: 24px;
+        h1 {
+            font-size: 2.5rem;
             font-weight: bold;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
 
-        .hero-text h1 {
-            font-size: 64px;
-            font-weight: bold;
-        }
-
-        .hero-text .description {
-            font-size: 20px;
-            margin-top: 10px;
-        }
-
-        .hero-text .lorem-text {
-            font-size: 16px;
-            margin-top: 20px;
-            color: #555;
-        }
-
-        .hero-image img {
-            max-width: 400px;
-            border-radius: 10px;
-        }
-
-        /* Skills Section */
         .skills {
-            text-align: center;
-            padding: 50px;
-            color: #f8f8f8;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 60px;
         }
 
-        .skills-container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            justify-content: center;
-        }
-
-        .skill-box {
-            background-color: #1a1a2e;
+        .skill {
+            width: 50%;
+            margin: 10px 0;
             padding: 20px;
-            width: 200px;
-            text-align: center;
+        }
+
+        .bar {
+            width: 100%;
+            background-color: #ddd;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(255, 75, 92, 0.2);
-            color: white;
+            overflow: hidden;
         }
 
-        h2 span {
-            color: #ff4b5c;
-            border-bottom: 3px solid #ff4b5c;
-            padding-bottom: 5px;
-        }
-        .skills h2 {
-    font-size: 36px;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 30px;
-    position: relative;
-    display: inline-block;
-}
-
-.skills h2 span {
-    color: #ff4b5c;
-    border-bottom: 4px solid #ff4b5c;
-    padding-bottom: 5px;
-}
-
-/* Optional Animation for a Cool Effect */
-.skills h2 span::after {
-    content: "";
-    display: block;
-    width: 50%;
-    height: 3px;
-    background: #ff4b5c;
-    margin: 5px auto;
-    transition: width 0.3s ease-in-out;
-}
-
-.skills h2:hover span::after {
-    width: 100%;
-}
-
-        /* Buttons */
-        button {
-            background-color: #ff4b5c;
-            border: none;
-            padding: 10px 20px;
-            color: white;
-            cursor: pointer;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
+        .progress {
+            display: flex;
         }
 
-        button:hover {
-            background-color: #d43748;
+        .orange {
+            background-color: orange;
+            height: 10px;
         }
-
-        /* Footer */
         footer {
-            background-color: #5f4646;
-            color: rgb(240, 214, 214);
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-        }
+    background-color: #5f4646;
+    color: rgb(240, 214, 214);
+    text-align: center;
+    padding: 20px;
+    margin-top: 0%;
+}
 
-        .footer-content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 10px;
-        }
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
 
-        .footer-content p {
-            font-size: 16px;
-        }
+.footer-content p {
+    font-size: 16px;
+}
 
-        .social-links {
-            list-style: none;
-            display: flex;
-            gap: 15px;
-            padding: 0;
-        }
+.social-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+}
 
-        .social-links li {
-            display: inline;
-        }
+.social-links li {
+    display: inline;
+}
 
-        .social-links a {
-            text-decoration: none;
-            color: white;
-            font-size: 16px;
-            transition: color 0.3s ease;
-        }
+.social-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
 
-        .social-links a:hover {
-            color: #f1c40f; 
-        }
+.social-links a:hover {
+    color: #f1c40f; 
+}
+
+
     </style>
 </head>
 <body>
-
-<header>
-    <div class="logo"><a href="index.html">Nooraaah</a></div>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="skills.html">My Skills</a></li>
-        
-            <li><a href="contact.html">Contact Me</a></li>
-        </ul>
-    </nav>
-</header>
-
-<section class="skills">
-    <h2>My <span>Skills & Services</span></h2>
-    <div class="skills-container">
-        <div class="skill-box">
-            <h3>Git Version Control</h3>
-            <p>Efficiently manage code versions using Git, track changes, and collaborate seamlessly with teams.</p>
-        </div>
-        <div class="skill-box">
-            <h3>App Design</h3>
-            <p>Design intuitive mobile applications with user-friendly interfaces and seamless experiences.</p>
-        </div>
-        <div class="skill-box">
-            <h3>Back-end Development</h3>
-            <p>Develop robust server-side applications and APIs using modern technologies.</p>
-        </div>
-        <div class="skill-box">
-            <h3>Web Development</h3>
-            <p>Create responsive, high-performance websites using front-end and back-end technologies.</p>
-        </div>
-        <div class="skill-box">
-            <h3>Photography</h3>
-            <p>Capture stunning visuals and moments with professional photography techniques.</p>
-        </div>
-        <div class="skill-box">
-            <h3>Freelancing</h3>
-            <p>Offer professional services in development, design, and digital solutions as a freelancer.</p>
+    <header>
+        <div class="logo">Nooraaah</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="skills.html">My skills</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <h1>Skills & Passion</h1>
+        <div class="skills">
+            <div class="skill">
+                <p>Photography</p>
+                <div class="bar"><div class="progress" style="width: 80%">
+                    <div class="orange" style="width: 70%"></div>
+                    </div></div>
+            </div>
+            <div class="skill">
+                <p>Python,C++</p>
+                <div class="bar"><div class="progress" style="width: 80%"><div class="orange" style="width: 60%"></div></div></div>
+            </div>
+            <div class="skill">
+                <p>Database management using SQL</p>
+                <div class="bar"><div class="progress" style="width: 75%"><div class="orange" style="width: 85%"></div></div></div>
+            </div>
+            <div class="skill">
+                <p>Canva</p>
+                <div class="bar"><div class="progress" style="width: 80%"><div class="orange" style="width: 65%"></div></div></div>
+            </div>
+            <div class="skill">
+                <p>Problem solving</p>
+                <div class="bar"><div class="progress" style="width: 70%"><div class="orange" style="width: 100%"></div></div></div>
+            </div>
+            <div class="skill">
+                <p>Web development</p>
+                <div class="bar"><div class="progress" style="width: 85%"><div class="orange" style="width: 75%"></div></div></div>
+            </div>
+            <div class="skill">
+                <p>CapCut</p>
+                <div class="bar"><div class="progress" style="width: 75%"><div class="orange" style="width: 90%"></div></div></div>
+            </div>
+            <div class="skill">
+                <p>Communication</p>
+                <div class="bar"><div class="progress" style="width: 80%"><div class="orange" style="width: 70%"></div></div></div>
+            </div>
         </div>
     </div>
-</section>
-
-
-<footer>
-    <div class="footer-content">
-        <p>&copy; 2025 Nooraaah. All Rights Reserved.</p>
-        <ul class="social-links">
-            <li><a href="https://github.com/" target="_blank">GitHub</a></li>
-            <li><a href="https://linkedin.com/" target="_blank">LinkedIn</a></li>
-            <li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
-        </ul>
-    </div>
-</footer>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Nooraaah. All Rights Reserved.</p>
+            <ul class="social-links">
+                <li><a href="https://github.com/" target="_blank">GitHub</a></li>
+                <li><a href="https://linkedin.com/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
+            </ul>
+        </div>
+    </footer>
 
 </body>
 </html>

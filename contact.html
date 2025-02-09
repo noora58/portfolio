@@ -58,10 +58,11 @@
     
             body {
                 background: linear-gradient(to bottom, #ffffff, #d7e8d4);
-                display: flex;
                 justify-content: center;
                 align-items: center;
-                height: 100vh;
+                margin: 0;
+                padding: 0;
+                
             }
     
             .container {
@@ -70,6 +71,7 @@
                 max-width: 900px;
                 align-items: flex-start;
                 justify-content: space-between;
+                margin: 120px auto 40px;
             }
     
             .text-section {
@@ -125,6 +127,48 @@
             button:hover {
                 background: #333;
             }
+            footer {
+    background-color: #5f4646;
+    color: rgb(240, 214, 214);
+    text-align: center;
+    padding: 20px;
+    margin-top: 0%;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-content p {
+    font-size: 16px;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+}
+
+.social-links li {
+    display: inline;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #f1c40f; 
+}
+
+
         </style>
     </head>
     <body>
@@ -162,6 +206,16 @@
                 <button>Send message</button>
             </div>
         </div>
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2025 Nooraaah. All Rights Reserved.</p>
+                <ul class="social-links">
+                    <li><a href="https://github.com/" target="_blank">GitHub</a></li>
+                    <li><a href="https://linkedin.com/" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
+                </ul>
+            </div>
+        </footer>
     </body>
     </html>
-    </html>
+    
